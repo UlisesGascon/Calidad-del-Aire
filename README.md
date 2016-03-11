@@ -20,15 +20,16 @@ Sistema para controlar la calidad del aire usando Arduino y los sensores MQ(2-9,
 
 ### Datasheets
 
-- [MQ-2](Datasheets/MQ-2_datasheet.pdf)
-- [MQ-3](Datasheets/MQ-3_datasheet.pdf)
-- [MQ-4](Datasheets/MQ-4_datasheet.pdf)
-- [MQ-5](Datasheets/MQ-5_datasheet.pdf)
-- [MQ-6](Datasheets/MQ-6_datasheet.pdf)
-- [MQ-7](Datasheets/MQ-7_datasheet.pdf)
-- [MQ-8](Datasheets/MQ-8_datasheet.pdf)
-- [MQ-9](Datasheets/MQ-9_datasheet.pdf)
-- [MQ-135](Datasheets/MQ-135_datasheet.pdf)
+- [MQ-2](datasheets/MQ-2_datasheet.pdf)
+- [MQ-3](datasheets/MQ-3_datasheet.pdf)
+- [MQ-4](datasheets/MQ-4_datasheet.pdf)
+- [MQ-5](datasheets/MQ-5_datasheet.pdf)
+- [MQ-6](datasheets/MQ-6_datasheet.pdf)
+- [MQ-7](datasheets/MQ-7_datasheet.pdf)
+- [MQ-8](datasheets/MQ-8_datasheet.pdf)
+- [MQ-9](datasheets/MQ-9_datasheet.pdf)
+- [MQ-135](datasheets/MQ-135_datasheet.pdf)
+- [DHT22 y AM2302](datasheets/DHT22_datasheet.pdf)
 
 ### Sensores
 
