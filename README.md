@@ -16,3 +16,18 @@ Sistema para controlar la calidad del aire usando Arduino y los sensores MQ(2-9,
 - [Formato .SVG](caja/caja_design.svg)
 - [Formato .PNG](caja/caja_design.png)
 - [Formato .PDF](caja/caja_design.pdf)
+
+
+### Sensores
+
+- **Gases**
+
+![sensores_img](datasheets/sensores_amazon.jpg)
+
+- [Sensor Kit (MQ2, MQ3, MQ4, MQ5, MQ6, MQ7, MQ8, MQ9 y MQ135) con jumpers](https://www.amazon.es/gp/product/B019GK4RNK)
+
+- **Humedad y temperatura**
+
+![temperatura_img](datasheets/temperatura_amazon.jpg)
+
+- [XCSOURCE® Módulo Sensor Digital Humedad DHT22 y Temperatura AM2302 Para Arduino TE248](https://www.amazon.es/gp/product/B011U8GA40/)
