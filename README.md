@@ -22,6 +22,43 @@ Sistema para controlar la calidad del aire usando Arduino y los sensores MQ(2-9,
 - [Formato .PDF](caja/caja_design.pdf)
 
 
+### Conexiones
+
+![caja](caja/caja_concepto.jpg)
+
+**Alimentación**
+
+- Alimentación externa (5v - 3A). Todos los sensores se conectan a la alimentación externa.
+
+- GND del Arduino y GND de la fuente externa se conectan entre sí.
+
+- IMPORTANTE: 5v (fuente de alimentación) y 5v (Arduino) NO se conectan entre sí.
+
+**Analógicas**
+
+- MQ-2 -> A13
+- MQ-3 -> A12
+- MQ-4 -> A11
+- MQ-5 -> A10
+- MQ-6 -> A9
+- MQ-7 -> A8
+- MQ-8 -> A7
+- MQ-9 -> A6
+- MQ-135 -> A5
+- AM2302/DHT22 -> A4
+
+**Digitales**
+
+- MQ-2 -> 13
+- MQ-3 -> 12
+- MQ-4 -> 11
+- MQ-5 -> 10
+- MQ-6 -> 9
+- MQ-7 -> 8
+- MQ-8 -> 7
+- MQ-9 -> 6
+- MQ-135 -> 5
+
 ### Datasheets
 
 - [MQ-2](datasheets/MQ-2_datasheet.pdf)
