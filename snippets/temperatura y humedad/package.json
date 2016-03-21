@@ -1,0 +1,14 @@
+{
+  "name": "temperatura-humedad-json",
+  "version": "1.0.0",
+  "description": "Trabajar con el sensor DHT22 desde Node.js usando serialport",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ulises Gascón",
+  "license": "GPLv3",
+  "dependencies": {
+    "serialport": "^2.0.6"
+  }
+}
