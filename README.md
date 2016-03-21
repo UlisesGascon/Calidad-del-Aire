@@ -67,16 +67,19 @@ Ejemplo de los datos que esperamos recibir vía puerto serial
 ```json
 {
 	"humedad": {
+		"valido": true,
 		"valor": 0,
 		"sensor": "AM2302",
 		"unidad": "%"
 	},
 	"temperatura": {
+		"valido": true,
 		"valor": 0,
 		"sensor": "DHT22",
 		"unidad": "°C"
 	},
 	"glp": {
+		"valido": true,
 		"valor": 0,
 		"unidad": "ppm",
 		"descripcion": "Gas licuado del petróleo (Propano, Butano, ambos)",
@@ -88,6 +91,7 @@ Ejemplo de los datos que esperamos recibir vía puerto serial
 		"sensor": "MQ-2"
 	},
 	"alcohol": {
+		"valido": true,
 		"valor": 0,
 		"unidad": "ppm",
 		"descripcion": "Alcohol (Benceno, Propano, Etanol, Metanol)",
@@ -99,6 +103,7 @@ Ejemplo de los datos que esperamos recibir vía puerto serial
 		"sensor": "MQ-3"
 	},
 	"metano": {
+		"valido": true,
 		"valor": 0,
 		"unidad": "ppm",
 		"descripcion": "Gas natural, Metano",
@@ -110,6 +115,7 @@ Ejemplo de los datos que esperamos recibir vía puerto serial
 		"sensor": "MQ-4"
 	},
 	"metano": {
+		"valido": true,
 		"valor": 0,
 		"unidad": "ppm",
 		"descripcion": "Propano",
@@ -121,6 +127,7 @@ Ejemplo de los datos que esperamos recibir vía puerto serial
 		"sensor": "MQ-6"
 	},
 	"monoxidoDeCarbono": {
+		"valido": true,
 		"valor": 0,
 		"unidad": "ppm",
 		"descripcion": "Monóxido de Carbono",
@@ -132,6 +139,7 @@ Ejemplo de los datos que esperamos recibir vía puerto serial
 		"sensor": "MQ-7"
 	},
 	"hidrogeno": {
+		"valido": true,
 		"valor": 0,
 		"unidad": "ppm",
 		"descripcion": "Hidrógeno",
@@ -143,6 +151,7 @@ Ejemplo de los datos que esperamos recibir vía puerto serial
 		"sensor": "MQ-8"
 	},
 	"amoniaco": {
+		"valido": true,
 		"valor": 0,
 		"unidad": "ppm",
 		"descripcion": "Amoníaco",
@@ -154,6 +163,7 @@ Ejemplo de los datos que esperamos recibir vía puerto serial
 		"sensor": "MQ-135"
 	},
 	"dioxidoDeCarbono": {
+		"valido": true,
 		"valor": 0,
 		"unidad": "ppm",
 		"descripcion": "Dióxido de carbono",
@@ -165,6 +175,7 @@ Ejemplo de los datos que esperamos recibir vía puerto serial
 		"sensor": "MQ-135"
 	},
 	"oxidosDeNitrogeno": {
+		"valido": true,
 		"valor": 0,
 		"unidad": "ppm",
 		"descripcion": "Óxidos de nitrógeno (Óxido nitroso, Óxido nítrico, Anhídrido nitroso, Tetraóxido de nitrógeno, Peróxido nítrico
@@ -175,7 +186,7 @@ Ejemplo de los datos que esperamos recibir vía puerto serial
 		"resistencia": 0,
 		"valorAnalogico": 0,
 		"sensor": "MQ-135"
-	}
+	},
 }
 ```
 
