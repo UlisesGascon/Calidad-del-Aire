@@ -3,7 +3,7 @@ Sistema para controlar la calidad del aire usando Arduino y los sensores MQ(2-9,
 
 ### Contenedor (caja)
 
-![caja](caja/caja_concepto.jpg)
+![caja](caja/caja_corte_laser_trasera.jpg)
 
 **Diseño impresión 3D**
 
@@ -14,7 +14,7 @@ Sistema para controlar la calidad del aire usando Arduino y los sensores MQ(2-9,
 
 **Diseño Corte Laser**
 
-![caja](caja/caja_corte_laser_trasera.jpg)
+![caja](caja/caja_concepto.jpg)
 
 - [Formato .DXF](caja/caja_design.dxf)
 - [Formato .SVG](caja/caja_design.svg)
