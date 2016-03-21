@@ -45,7 +45,6 @@ Sistema para controlar la calidad del aire usando Arduino y los sensores MQ(2-9,
 - MQ-8 -> A7
 - MQ-9 -> A6
 - MQ-135 -> A5
-- AM2302/DHT22 -> A4
 
 **Digitales**
 
@@ -58,6 +57,12 @@ Sistema para controlar la calidad del aire usando Arduino y los sensores MQ(2-9,
 - MQ-8 -> 7
 - MQ-9 -> 6
 - MQ-135 -> 5
+- AM2302/DHT22 -> 4
+
+### Librerías
+
+- [DHTMaster](https://github.com/markruys/arduino-DHT)
+
 
 ### Datasheets
 
