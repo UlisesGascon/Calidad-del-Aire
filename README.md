@@ -186,14 +186,13 @@ Ejemplo de los datos que esperamos recibir vía puerto serial
 		"resistencia": 0,
 		"valorAnalogico": 0,
 		"sensor": "MQ-135"
-	},
+	}
 }
 ```
 
 ### Librerías
 
 - [DHTMaster](https://github.com/markruys/arduino-DHT)
-
 
 ### Datasheets
 
