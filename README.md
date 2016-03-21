@@ -24,7 +24,7 @@ Sistema para controlar la calidad del aire usando Arduino y los sensores MQ(2-9,
 
 ### Conexiones
 
-![caja](caja/caja_concepto.jpg)
+![caja](caja/caja_conexiones.jpg)
 
 **Alimentación**
 
