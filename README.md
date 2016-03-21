@@ -59,6 +59,126 @@ Sistema para controlar la calidad del aire usando Arduino y los sensores MQ(2-9,
 - MQ-135 -> 5
 - AM2302/DHT22 -> 4
 
+
+### Datos (formato [JSON](https://www.wikiwand.com/es/JSON))
+
+Ejemplo de los datos que esperamos recibir vía puerto serial
+
+```json
+{
+	"humedad": {
+		"valor": 0,
+		"sensor": "AM2302",
+		"unidad": "%"
+	},
+	"temperatura": {
+		"valor": 0,
+		"sensor": "DHT22",
+		"unidad": "°C"
+	},
+	"glp": {
+		"valor": 0,
+		"unidad": "ppm",
+		"descripcion": "Gas licuado del petróleo (Propano, Butano, ambos)",
+		"formulaQuimica": ["C3H8", "C4H10"],
+		"umbralAlcanzado": false,
+		"voltaje": 0,
+		"resistencia": 0,
+		"valorAnalogico": 0,
+		"sensor": "MQ-2"
+	},
+	"alcohol": {
+		"valor": 0,
+		"unidad": "ppm",
+		"descripcion": "Alcohol (Benceno, Propano, Etanol, Metanol)",
+		"formulaQuimica": ["C6H6", "C3H8", "C2H6O", "CH3OH"],
+		"umbralAlcanzado": false,
+		"voltaje": 0,
+		"resistencia": 0,
+		"valorAnalogico": 0,
+		"sensor": "MQ-3"
+	},
+	"metano": {
+		"valor": 0,
+		"unidad": "ppm",
+		"descripcion": "Gas natural, Metano",
+		"formulaQuimica": ["CH4"],
+		"umbralAlcanzado": false,
+		"voltaje": 0,
+		"resistencia": 0,
+		"valorAnalogico": 0,
+		"sensor": "MQ-4"
+	},
+	"metano": {
+		"valor": 0,
+		"unidad": "ppm",
+		"descripcion": "Propano",
+		"formulaQuimica": ["C3H8"],
+		"umbralAlcanzado": false,
+		"voltaje": 0,
+		"resistencia": 0,
+		"valorAnalogico": 0,
+		"sensor": "MQ-6"
+	},
+	"monoxidoDeCarbono": {
+		"valor": 0,
+		"unidad": "ppm",
+		"descripcion": "Monóxido de Carbono",
+		"formulaQuimica": ["CO"],
+		"umbralAlcanzado": false,
+		"voltaje": 0,
+		"resistencia": 0,
+		"valorAnalogico": 0,
+		"sensor": "MQ-7"
+	},
+	"hidrogeno": {
+		"valor": 0,
+		"unidad": "ppm",
+		"descripcion": "Hidrógeno",
+		"formulaQuimica": ["H2"],
+		"umbralAlcanzado": false,
+		"voltaje": 0,
+		"resistencia": 0,
+		"valorAnalogico": 0,
+		"sensor": "MQ-8"
+	},
+	"amoniaco": {
+		"valor": 0,
+		"unidad": "ppm",
+		"descripcion": "Amoníaco",
+		"formulaQuimica": ["NH3"],
+		"umbralAlcanzado": false,
+		"voltaje": 0,
+		"resistencia": 0,
+		"valorAnalogico": 0,
+		"sensor": "MQ-135"
+	},
+	"dioxidoDeCarbono": {
+		"valor": 0,
+		"unidad": "ppm",
+		"descripcion": "Dióxido de carbono",
+		"formulaQuimica": ["CO2"],
+		"umbralAlcanzado": false,
+		"voltaje": 0,
+		"resistencia": 0,
+		"valorAnalogico": 0,
+		"sensor": "MQ-135"
+	},
+	"oxidosDeNitrogeno": {
+		"valor": 0,
+		"unidad": "ppm",
+		"descripcion": "Óxidos de nitrógeno (Óxido nitroso, Óxido nítrico, Anhídrido nitroso, Tetraóxido de nitrógeno, Peróxido nítrico
+, Anhídrido nítrico)",
+		"formulaQuimica": ["NOx", "N2O", "NO", "N2O3", "N2O4", "NO2", "N2O5"],
+		"umbralAlcanzado": false,
+		"voltaje": 0,
+		"resistencia": 0,
+		"valorAnalogico": 0,
+		"sensor": "MQ-135"
+	},
+}
+```
+
 ### Librerías
 
 - [DHTMaster](https://github.com/markruys/arduino-DHT)
