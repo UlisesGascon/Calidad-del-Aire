@@ -5,6 +5,8 @@ Estos son los calculos que se utilizan en el sketch para convertir los valores a
 
 ### Alcohol
 
+![Alcohol](alcohol.png)
+
 **Puntos de la curva**
 
 Rs/Ro | mg/L
