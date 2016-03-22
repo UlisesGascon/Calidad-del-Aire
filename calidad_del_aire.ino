@@ -38,7 +38,7 @@ void loop()
   int mq3_adc = analogRead(A12);
   float mq3_voltaje = mq3_adc * (5.0 / 1023.0);
   float mq3_resistencia = 1000*((5-mq3_voltaje)/mq3_voltaje); 
-  double alcohol = 0.4091*pow(mq3_resistencia/5463, -1.497);
+  double Alcohol = 0.337*pow(mq3_resistencia/5463, -1.45);
   String mq3_umbral = "false";
 
   if(digitalRead(12) == 0){
