@@ -11,30 +11,27 @@ Estos son los calculos que se utilizan en el sketch para convertir los valores a
 
 Rs/Ro | mg/L
 ------------ | -------------
-0.1333 | 10
-0.16666 | 8
-0.17 | 6
-0.18 | 4
-0.19 | 2.5
-0.2 | 1.8
-0.23 | 1.4
-0.6 | 0.9
-0.7 | 0.7
-0.8 | 0.6
-0.9 | 0.5
-1 | 0,4
-1.66666 | 0.21
-1.24 | 0.1
+0,16 | 10
+0,209 | 9,156
+0,294 | 8,03
+0,355 | 6,343
+0,489 | 4,656
+0,635 | 2,828
+0,744 | 1,14
+1 | 0,648
+2,7 | 0,416
+4,162 | 0,114
+
 
 **Ecuación potencial**
 
 - Expresión:
 ```
-y = 0,337x-1,45 
+y = 1,108x-1,41  
 ```
 - Código:
 ```arduino
-double Alcohol = 0.337*pow(mq3_resistencia/5463, -1.45);
+double Alcohol = 1,108*pow(mq3_resistencia/5463, -1,41);
 ```
 
 
