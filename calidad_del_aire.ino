@@ -6,7 +6,6 @@ void setup()
 {
   Serial.begin(9600);
   dht.setup(4);
-  pinMode(4, INPUT);
   pinMode(5, INPUT);
   pinMode(6, INPUT);
   pinMode(7, INPUT);
@@ -99,9 +98,9 @@ void loop()
   float mq135_voltaje = mq135_adc * (5.0 / 1023.0);
   float mq135_resistencia = 1000*((5-mq135_voltaje)/mq135_voltaje);
   // PENDIENTE DE AJUSTE
-  double co2 = 0.4091*pow(mq135_resistencia/5463, -1.497);
-  double nox = 0.4091*pow(mq135_resistencia/5463, -1.497);
-  double nh3 = 0.4091*pow(mq135_resistencia/5463, -1.497);
+  double dioxidoDeCarbono = 0.4091*pow(mq135_resistencia/5463, -1.497);
+  double oxidosDeNitrogeno = 0.4091*pow(mq135_resistencia/5463, -1.497);
+  double amoniaco = 0.4091*pow(mq135_resistencia/5463, -1.497);
   String mq135_umbral = "false";
 
   if(digitalRead(5) == 0){
@@ -112,24 +111,78 @@ void loop()
   String jsonSerial = "{";
 
   // MQ-135
-  if (isnan(co2) || isnan(nox) || isnan(nh3)) {
+  if (isnan(dioxidoDeCarbono) || isnan(oxidosDeNitrogeno) || isnan(amoniaco)) {
 
-    jsonSerial += "\"co2\": {";
+    jsonSerial += "\"dioxidoDeCarbono\": {";
     jsonSerial += "\"valido\": false,";
     jsonSerial += "\"error\": \"Valor númerico no valido\"";
     jsonSerial += "},";
 
-    jsonSerial += "\"nox\": {";
+    jsonSerial += "\"oxidosDeNitrogeno\": {";
     jsonSerial += "\"valido\": false,";
     jsonSerial += "\"error\": \"Valor númerico no valido\"";
     jsonSerial += "},";
 
-    jsonSerial += "\"nh3\": {";
+    jsonSerial += "\"amoniaco\": {";
     jsonSerial += "\"valido\": false,";
     jsonSerial += "\"error\": \"Valor númerico no valido\"";
     jsonSerial += "},";
 
   } else {
+
+    jsonSerial += "\"amoniaco\": {";
+    jsonSerial += "\"valido\": true,";
+    jsonSerial += "\"valor\":"; 
+    jsonSerial += amoniaco;
+    jsonSerial += ",\"unidad\": \"ppm\",";
+    jsonSerial += "\"descripcion\": \"Amoníaco\",";      
+    jsonSerial += "\"formulaQuimica\": [\"NH3\"],";    
+    jsonSerial += "\"umbralAlcanzado\": ";
+    jsonSerial += mq135_umbral;
+    jsonSerial += ",\"voltaje\": ";
+    jsonSerial += mq135_voltaje;
+    jsonSerial += ",\"resistencia\":";
+    jsonSerial += mq135_resistencia;
+    jsonSerial += ",\"valorAnalogico\":";
+    jsonSerial += mq135_adc;
+    jsonSerial += ",\"sensor\": \"MQ-135\"";
+    jsonSerial += "},";
+
+    jsonSerial += "\"dioxidoDeCarbono\": {";
+    jsonSerial += "\"valido\": true,";
+    jsonSerial += "\"valor\":"; 
+    jsonSerial += dioxidoDeCarbono;
+    jsonSerial += ",\"unidad\": \"ppm\",";
+    jsonSerial += "\"descripcion\": \"Dióxido de carbono\",";      
+    jsonSerial += "\"formulaQuimica\": [\"CO2\"],";    
+    jsonSerial += "\"umbralAlcanzado\": ";
+    jsonSerial += mq135_umbral;
+    jsonSerial += ",\"voltaje\": ";
+    jsonSerial += mq135_voltaje;
+    jsonSerial += ",\"resistencia\":";
+    jsonSerial += mq135_resistencia;
+    jsonSerial += ",\"valorAnalogico\":";
+    jsonSerial += mq135_adc;
+    jsonSerial += ",\"sensor\": \"MQ-135\"";
+    jsonSerial += "},";  
+
+    jsonSerial += "\"oxidosDeNitrogeno\": {";
+    jsonSerial += "\"valido\": true,";
+    jsonSerial += "\"valor\":"; 
+    jsonSerial += oxidosDeNitrogeno;
+    jsonSerial += ",\"unidad\": \"ppm\",";
+    jsonSerial += "\"descripcion\": \"Óxidos de nitrógeno (Óxido nitroso, Óxido nítrico, Anhídrido nitroso, Tetraóxido de nitrógeno, Peróxido nítrico, Anhídrido nítrico)\",";      
+    jsonSerial += "\"formulaQuimica\": [\"NOx\", \"N2O\", \"NO\", \"N2O3\", \"N2O4\", \"NO2\", \"N2O5\"],";    
+    jsonSerial += "\"umbralAlcanzado\": ";
+    jsonSerial += mq135_umbral;
+    jsonSerial += ",\"voltaje\": ";
+    jsonSerial += mq135_voltaje;
+    jsonSerial += ",\"resistencia\":";
+    jsonSerial += mq135_resistencia;
+    jsonSerial += ",\"valorAnalogico\":";
+    jsonSerial += mq135_adc;
+    jsonSerial += ",\"sensor\": \"MQ-135\"";
+    jsonSerial += "},"; 
 
   }
 
@@ -142,6 +195,24 @@ void loop()
     jsonSerial += "},";
 
   } else {
+
+    jsonSerial += "\"hidrogeno\": {";
+    jsonSerial += "\"valido\": true,";
+    jsonSerial += "\"valor\":"; 
+    jsonSerial += hidrogeno;
+    jsonSerial += ",\"unidad\": \"ppm\",";
+    jsonSerial += "\"descripcion\": \"Hidrógeno\",";      
+    jsonSerial += "\"formulaQuimica\": [\"H2\"],";    
+    jsonSerial += "\"umbralAlcanzado\": ";
+    jsonSerial += mq8_umbral;
+    jsonSerial += ",\"voltaje\": ";
+    jsonSerial += mq8_voltaje;
+    jsonSerial += ",\"resistencia\":";
+    jsonSerial += mq8_resistencia;
+    jsonSerial += ",\"valorAnalogico\":";
+    jsonSerial += mq8_adc;
+    jsonSerial += ",\"sensor\": \"MQ-8\"";
+    jsonSerial += "},";  
 
   }
 
