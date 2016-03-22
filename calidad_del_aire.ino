@@ -32,7 +32,7 @@ void loop()
   int mq2_adc = analogRead(A13);
   float mq2_voltaje = mq2_adc * (5.0 / 1023.0);
   float mq2_resistencia = 1000*((5-mq2_voltaje)/mq2_voltaje);
-  double glp = 4102*pow(mq2_resistencia/5463, -2,95);
+  double glp = 6482*pow(mq2_resistencia/5463, -1.94);
   bool mq2_umbral = digitalRead(13); 
 
   // MQ-3
@@ -84,7 +84,6 @@ void loop()
   int mq8_adc = analogRead(A7);
   float mq8_voltaje = mq8_adc * (5.0 / 1023.0);
   float mq8_resistencia = 1000*((5-mq8_voltaje)/mq8_voltaje);
-  // PENDIENTE DE AJUSTE
   double hidrogeno = 0.4091*pow(mq8_resistencia/5463, -1.497);
   String mq8_umbral = "false";
 

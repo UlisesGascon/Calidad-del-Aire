@@ -46,21 +46,27 @@ double Alcohol = 0.337*pow(mq3_resistencia/5463, -1.45);
 
 Rs/Ro | ppm
 ------------ | -------------
-0.75 | 10000
-0.9 | 5000
-1.7 | 1000
-2.7 | 200
+0,892 | 10000
+0,91 | 8000
+0,964 | 6142,85
+1 | 5142,85
+2 | 1928,57
+2,666 | 1000
+3 | 778,57
+4 | 485,71
+4,666 | 271,42
+
 
 
 **Ecuación potencial**
 
 - Expresión:
 ```
-y = 4102x-2,95 
+y = 6482,x-1,94
 ```
 - Código:
 ```arduino
-double glp = 4102*pow(mq2_resistencia/5463, -2,95);
+double glp = 6482*pow(mq2_resistencia/5463, -1.94);
 ```
 
 
@@ -120,6 +126,8 @@ y = 71,78x-1,49
   
 
 ### Hidrógeno
+
+  double hidrogeno = 0.4091*pow(mq8_resistencia/5463, -1.497);
 
 ### Dióxido de Carbono
 
