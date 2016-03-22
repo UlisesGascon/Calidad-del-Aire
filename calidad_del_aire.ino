@@ -50,7 +50,7 @@ void loop()
   int mq4_adc = analogRead(A11);
   float mq4_voltaje = mq4_adc * (5.0 / 1023.0);
   float mq4_resistencia = 1000*((5-mq4_voltaje)/mq4_voltaje);
-  double metano = 876,1*pow(mq4_resistencia/5463, -2,36);
+  double metano = 6922*pow(mq4_resistencia/5463, -1,91);
   String mq4_umbral = "false";
 
   if(digitalRead(11) == 0){

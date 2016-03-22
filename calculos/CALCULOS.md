@@ -76,21 +76,21 @@ double glp = 8555*pow(mq2_resistencia/5463, -1,74);
 
 Rs/Ro | ppm
 ------------ | -------------
-0.35 | 10000
-0.48 | 5000
-1 | 1000
-1.8 | 200
+0,898 | 10000
+0,915 | 7279,069
+2,583 | 1000
+4,75 | 379,069
 
 
 **Ecuación potencial**
 
 - Expresión:
 ```
-y = 876,1x-2,36
+y = 6922,x-1,91
 ```
 - Código:
 ```arduino
-double metano = 876,1*pow(mq4_resistencia/5463, -2,36);
+double metano = 6922*pow(mq4_resistencia/5463, -1,91);
 ```
 
 ### Propano
