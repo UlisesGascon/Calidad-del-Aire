@@ -95,6 +95,37 @@ double metano = 6922*pow(mq4_resistencia/5463, -1,91);
 
 ### Propano
 
+
+![propano](propano.png)
+
+**Puntos de la curva**
+
+Rs/Ro | ppm
+------------ | -------------
+0,64 | 10000
+0,738 | 7279,069
+0,82 | 5325,581
+0,885 | 3651,162
+0,934 | 2744,186
+1 | 1000
+1,32 | 903,076
+2,145 | 716,153
+3,781 | 370
+
+
+
+**Ecuación potencial**
+
+- Expresión:
+```
+y = 2738,x-1,81 
+```
+- Código:
+```arduino
+double propano = 2738*pow(mq6_resistencia/5463, -1,81);
+```
+
+
 ### Monóxido de Carbono
 
 ![monoxido](monoxido.png)

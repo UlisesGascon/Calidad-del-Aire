@@ -61,8 +61,7 @@ void loop()
   int mq6_adc = analogRead(A9);
   float mq6_voltaje = mq6_adc * (5.0 / 1023.0);
   float mq6_resistencia = 1000*((5-mq6_voltaje)/mq6_voltaje);
-  // PENDIENTE DE AJUSTE
-  double propano = 0.4091*pow(mq6_resistencia/5463, -1.497);
+  double propano = 2738*pow(mq6_resistencia/5463, -1,81);
   String mq6_umbral = "false";
 
   if(digitalRead(9) == 0){
