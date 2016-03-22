@@ -1,3 +1,5 @@
+// Version 1.0.0 - Development
+
 #include "DHT.h"
 
 DHT dht;
@@ -71,8 +73,7 @@ void loop()
   int mq7_adc = analogRead(A8);
   float mq7_voltaje = mq7_adc * (5.0 / 1023.0);
   float mq7_resistencia = 1000*((5-mq7_voltaje)/mq7_voltaje);
-  // PENDIENTE DE AJUSTE
-  double monoxidoDeCarbono = 0.4091*pow(mq7_resistencia/5463, -1.497);
+  double monoxidoDeCarbono = 71.781*pow(mq7_resistencia/5463, -1.49);
   String mq7_umbral = "false";
 
   if(digitalRead(8) == 0){

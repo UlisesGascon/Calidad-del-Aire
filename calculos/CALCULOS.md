@@ -93,6 +93,32 @@ double metano = 876,1*pow(mq4_resistencia/5463, -2,36);
 
 ### Monóxido de Carbono
 
+![monoxido](monoxido.png)
+
+**Puntos de la curva**
+
+Rs/Ro | ppm
+------------ | -------------
+0,09 | 4000
+0,17 | 1000
+0,19 | 600
+0,28 | 400
+0,5 | 200
+1,6666 | 40
+
+
+**Ecuación potencial**
+
+- Expresión:
+```
+y = 71,78x-1,49 
+```
+- Código:
+```arduino
+	double monoxidoDeCarbono = 71.781*pow(mq7_resistencia/5463, -1.49);
+```
+  
+
 ### Hidrógeno
 
 ### Dióxido de Carbono
