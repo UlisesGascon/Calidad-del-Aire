@@ -66,126 +66,125 @@ Ejemplo de los datos que esperamos recibir vía puerto serial
 
 ```json
 {
+	"amoniaco": {
+		"valido": true,
+		"valor": 0.06,
+		"unidad": "ppm",
+		"descripcion": "Amoníaco",
+		"formulaQuimica": ["NH3"],
+		"umbralAlcanzado": false,
+		"voltaje": 0.23,
+		"resistencia": 20312.50,
+		"valorAnalogico": 48,
+		"sensor": "MQ-135"
+	},
+	"dioxidoDeCarbono": {
+		"valido": true,
+		"valor": 0.06,
+		"unidad": "ppm",
+		"descripcion": "Dióxido de carbono",
+		"formulaQuimica": ["CO2"],
+		"umbralAlcanzado": false,
+		"voltaje": 0.23,
+		"resistencia": 20312.50,
+		"valorAnalogico": 48,
+		"sensor": "MQ-135"
+	},
+	"oxidosDeNitrogeno": {
+		"valido": true,
+		"valor": 0.06,
+		"unidad": "ppm",
+		"descripcion": "Óxidos de nitrógeno (Óxido nitroso, Óxido nítrico, Anhídrido nitroso, Tetraóxido de nitrógeno, Peróxido nítrico, Anhídrido nítrico)",
+		"formulaQuimica": ["NOx", "N2O", "NO", "N2O3", "N2O4", "NO2", "N2O5"],
+		"umbralAlcanzado": false,
+		"voltaje": 0.23,
+		"resistencia": 20312.50,
+		"valorAnalogico": 48,
+		"sensor": "MQ-135"
+	},
+	"hidrogeno": {
+		"valido": true,
+		"valor": 0.09,
+		"unidad": "ppm",
+		"descripcion": "Hidrógeno",
+		"formulaQuimica": ["H2"],
+		"umbralAlcanzado": false,
+		"voltaje": 0.32,
+		"resistencia": 14738.46,
+		"valorAnalogico": 65,
+		"sensor": "MQ-8"
+	},
+	"monoxidoDeCarbono": {
+		"valido": true,
+		"valor": 0.09,
+		"unidad": "ppm",
+		"descripcion": "Monóxido de Carbono",
+		"formulaQuimica": ["CO"],
+		"umbralAlcanzado": false,
+		"voltaje": 0.31,
+		"resistencia": 15238.09,
+		"valorAnalogico": 63,
+		"sensor": "MQ-7"
+	},
+	"propano": {
+		"valido": true,
+		"valor": 0.15,
+		"unidad": "ppm",
+		"descripcion": "Propano",
+		"formulaQuimica": ["C3H8"],
+		"umbralAlcanzado": false,
+		"voltaje": 0.42,
+		"resistencia": 10895.35,
+		"valorAnalogico": 86,
+		"sensor": "MQ-6"
+	},
+	"metano": {
+		"valido": true,
+		"valor": 0.09,
+		"unidad": "ppm",
+		"descripcion": "Gas natural, Metano",
+		"formulaQuimica": ["CH4"],
+		"umbralAlcanzado": false,
+		"voltaje": 0.32,
+		"resistencia": 14738.46,
+		"valorAnalogico": 65,
+		"sensor": "MQ-4"
+	},
+	"glp": {
+		"valido": true,
+		"valor": 0.09,
+		"unidad": "ppm",
+		"descripcion": "Gas licuado del petróleo (Propano, Butano, ambos)",
+		"formulaQuimica": ["C3H8", "C4H10"],
+		"umbralAlcanzado": 1,
+		"voltaje": 0.31,
+		"resistencia": 15238.09,
+		"valorAnalogico": 63,
+		"sensor": "MQ-2"
+	},
+	"alcohol": {
+		"valido": true,
+		"valor": 0.02,
+		"unidad": "mg/L",
+		"descripcion": "Alcohol (Benceno, Propano, Etanol, Metanol)",
+		"formulaQuimica": ["C6H6", "C3H8", "C2H6O", "CH3OH"],
+		"umbralAlcanzado": false,
+		"voltaje": 0.11,
+		"resistencia": 45500.00,
+		"valorAnalogico": 22,
+		"sensor": "MQ-3"
+	},
 	"humedad": {
 		"valido": true,
-		"valor": 0,
+		"valor": 56.60,
 		"sensor": "AM2302",
 		"unidad": "%"
 	},
 	"temperatura": {
 		"valido": true,
-		"valor": 0,
+		"valor": 24.20,
 		"sensor": "DHT22",
 		"unidad": "°C"
-	},
-	"glp": {
-		"valido": true,
-		"valor": 0,
-		"unidad": "ppm",
-		"descripcion": "Gas licuado del petróleo (Propano, Butano, ambos)",
-		"formulaQuimica": ["C3H8", "C4H10"],
-		"umbralAlcanzado": false,
-		"voltaje": 0,
-		"resistencia": 0,
-		"valorAnalogico": 0,
-		"sensor": "MQ-2"
-	},
-	"alcohol": {
-		"valido": true,
-		"valor": 0,
-		"unidad": "ppm",
-		"descripcion": "Alcohol (Benceno, Propano, Etanol, Metanol)",
-		"formulaQuimica": ["C6H6", "C3H8", "C2H6O", "CH3OH"],
-		"umbralAlcanzado": false,
-		"voltaje": 0,
-		"resistencia": 0,
-		"valorAnalogico": 0,
-		"sensor": "MQ-3"
-	},
-	"metano": {
-		"valido": true,
-		"valor": 0,
-		"unidad": "ppm",
-		"descripcion": "Gas natural, Metano",
-		"formulaQuimica": ["CH4"],
-		"umbralAlcanzado": false,
-		"voltaje": 0,
-		"resistencia": 0,
-		"valorAnalogico": 0,
-		"sensor": "MQ-4"
-	},
-	"metano": {
-		"valido": true,
-		"valor": 0,
-		"unidad": "ppm",
-		"descripcion": "Propano",
-		"formulaQuimica": ["C3H8"],
-		"umbralAlcanzado": false,
-		"voltaje": 0,
-		"resistencia": 0,
-		"valorAnalogico": 0,
-		"sensor": "MQ-6"
-	},
-	"monoxidoDeCarbono": {
-		"valido": true,
-		"valor": 0,
-		"unidad": "ppm",
-		"descripcion": "Monóxido de Carbono",
-		"formulaQuimica": ["CO"],
-		"umbralAlcanzado": false,
-		"voltaje": 0,
-		"resistencia": 0,
-		"valorAnalogico": 0,
-		"sensor": "MQ-7"
-	},
-	"hidrogeno": {
-		"valido": true,
-		"valor": 0,
-		"unidad": "ppm",
-		"descripcion": "Hidrógeno",
-		"formulaQuimica": ["H2"],
-		"umbralAlcanzado": false,
-		"voltaje": 0,
-		"resistencia": 0,
-		"valorAnalogico": 0,
-		"sensor": "MQ-8"
-	},
-	"amoniaco": {
-		"valido": true,
-		"valor": 0,
-		"unidad": "ppm",
-		"descripcion": "Amoníaco",
-		"formulaQuimica": ["NH3"],
-		"umbralAlcanzado": false,
-		"voltaje": 0,
-		"resistencia": 0,
-		"valorAnalogico": 0,
-		"sensor": "MQ-135"
-	},
-	"dioxidoDeCarbono": {
-		"valido": true,
-		"valor": 0,
-		"unidad": "ppm",
-		"descripcion": "Dióxido de carbono",
-		"formulaQuimica": ["CO2"],
-		"umbralAlcanzado": false,
-		"voltaje": 0,
-		"resistencia": 0,
-		"valorAnalogico": 0,
-		"sensor": "MQ-135"
-	},
-	"oxidosDeNitrogeno": {
-		"valido": true,
-		"valor": 0,
-		"unidad": "ppm",
-		"descripcion": "Óxidos de nitrógeno (Óxido nitroso, Óxido nítrico, Anhídrido nitroso, Tetraóxido de nitrógeno, Peróxido nítrico
-, Anhídrido nítrico)",
-		"formulaQuimica": ["NOx", "N2O", "NO", "N2O3", "N2O4", "NO2", "N2O5"],
-		"umbralAlcanzado": false,
-		"voltaje": 0,
-		"resistencia": 0,
-		"valorAnalogico": 0,
-		"sensor": "MQ-135"
 	}
 }
 ```
