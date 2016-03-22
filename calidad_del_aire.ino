@@ -83,7 +83,7 @@ void loop()
   int mq8_adc = analogRead(A7);
   float mq8_voltaje = mq8_adc * (5.0 / 1023.0);
   float mq8_resistencia = 1000*((5-mq8_voltaje)/mq8_voltaje);
-  double hidrogeno = 0.4091*pow(mq8_resistencia/5463, -1.497);
+  double hidrogeno = 1803*pow(mq8_resistencia/5463, -0.66);
   String mq8_umbral = "false";
 
   if(digitalRead(7) == 0){

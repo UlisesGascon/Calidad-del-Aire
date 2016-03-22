@@ -156,7 +156,35 @@ Rs/Ro | ppm
 
 ### Hidrógeno
 
-  double hidrogeno = 0.4091*pow(mq8_resistencia/5463, -1.497);
+![hidrogeno](hidrogeno.png)
+
+**Puntos de la curva**
+
+Rs/Ro | ppm
+------------ | -------------
+0,059 | 10000
+0,1 | 7300
+0,366 | 5200
+0,633 | 3700
+0,783 | 2575
+1 | 1000
+2,211 | 917,5
+4,807 | 730
+9,307 | 370
+
+
+
+**Ecuación potencial**
+
+- Expresión:
+```
+	y = 1803,x-0,66 
+```
+- Código:
+```arduino
+	double hidrogeno = 1803*pow(mq8_resistencia/5463, -0.66);
+```
+  
 
 ### Dióxido de Carbono
 
