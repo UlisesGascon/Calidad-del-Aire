@@ -224,4 +224,3 @@ Ejemplo de los datos que esperamos recibir vía puerto serial
 
 - **[Trastejant - Sensores de gas](http://www.trastejant.es/tutoriales/electronica/sensoresGas.html)**
 - **[Naylamp Mechatronics - Tutorial sensores de gas MQ2, MQ3, MQ7 y MQ135](http://www.naylampmechatronics.com/blog/42_Tutorial-sensores-de-gas-MQ2-MQ3-MQ7-y-MQ13.html)**
-Ejemplo de los datos que esperamos recibir vía puerto serial
