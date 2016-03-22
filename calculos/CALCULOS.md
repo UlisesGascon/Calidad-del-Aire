@@ -36,3 +36,44 @@ y = 0,337x-1,45
 ```arduino
 double Alcohol = 0.337*pow(mq3_resistencia/5463, -1.45);
 ```
+
+
+### Gases Licuados del Petróleo (GLP)
+
+![Alcohol](glp.png)
+
+**Puntos de la curva**
+
+Rs/Ro | ppm
+------------ | -------------
+0,75 | 10000
+0,9 | 5000
+1,7 | 1000
+2,7 | 200
+
+
+**Ecuación potencial**
+
+- Expresión:
+```
+y = 4102x-2,95 
+```
+- Código:
+```arduino
+double glp = 4102*pow(mq2_resistencia/5463, -2,95);
+```
+
+
+### Metano
+
+### Propano
+
+### Monóxido de Carbono
+
+### Hidrógeno
+
+### Dióxido de Carbono
+
+### Óxidos de Nitrógeno
+
+### Amoniaco

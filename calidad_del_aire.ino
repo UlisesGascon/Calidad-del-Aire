@@ -30,8 +30,7 @@ void loop()
   int mq2_adc = analogRead(A13);
   float mq2_voltaje = mq2_adc * (5.0 / 1023.0);
   float mq2_resistencia = 1000*((5-mq2_voltaje)/mq2_voltaje);
-  // PENDIENTE DE AJUSTE 
-  double glp = 0.4091*pow(mq2_resistencia/5463, -1.497);
+  double glp = 4102*pow(mq2_resistencia/5463, -2,95);
   bool mq2_umbral = digitalRead(13); 
 
   // MQ-3
