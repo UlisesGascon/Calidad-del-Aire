@@ -72,7 +72,7 @@ void loop()
   int mq7_adc = analogRead(A8);
   float mq7_voltaje = mq7_adc * (5.0 / 1023.0);
   float mq7_resistencia = 1000*((5-mq7_voltaje)/mq7_voltaje);
-  double monoxidoDeCarbono = 71.781*pow(mq7_resistencia/5463, -1.49);
+  double monoxidoDeCarbono = 233,9*pow(mq7_resistencia/5463, -1,40);
   String mq7_umbral = "false";
 
   if(digitalRead(8) == 0){

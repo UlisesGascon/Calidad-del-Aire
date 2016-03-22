@@ -27,11 +27,11 @@ Rs/Ro | mg/L
 
 - Expresión:
 ```
-y = 1,108x-1,41  
+	y = 1,108x-1,41  
 ```
 - Código:
 ```arduino
-double Alcohol = 1,108*pow(mq3_resistencia/5463, -1,41);
+	double Alcohol = 1,108*pow(mq3_resistencia/5463, -1,41);
 ```
 
 
@@ -60,11 +60,11 @@ Rs/Ro | ppm
 
 - Expresión:
 ```
-y = 8555,x-1,74
+	y = 8555,x-1,74
 ```
 - Código:
 ```arduino
-double glp = 8555*pow(mq2_resistencia/5463, -1,74);
+	double glp = 8555*pow(mq2_resistencia/5463, -1,74);
 ```
 
 
@@ -86,11 +86,11 @@ Rs/Ro | ppm
 
 - Expresión:
 ```
-y = 6922,x-1,91
+	y = 6922,x-1,91
 ```
 - Código:
 ```arduino
-double metano = 6922*pow(mq4_resistencia/5463, -1,91);
+	double metano = 6922*pow(mq4_resistencia/5463, -1,91);
 ```
 
 ### Propano
@@ -118,11 +118,11 @@ Rs/Ro | ppm
 
 - Expresión:
 ```
-y = 2738,x-1,81 
+	y = 2738,x-1,81 
 ```
 - Código:
 ```arduino
-double propano = 2738*pow(mq6_resistencia/5463, -1,81);
+	double propano = 2738*pow(mq6_resistencia/5463, -1,81);
 ```
 
 
@@ -134,23 +134,23 @@ double propano = 2738*pow(mq6_resistencia/5463, -1,81);
 
 Rs/Ro | ppm
 ------------ | -------------
-0,09 | 4000
-0,17 | 1000
-0,19 | 600
-0,28 | 400
-0,5 | 200
-1,6666 | 40
+0,096 | 6464,285
+0,405 | 1000
+0,614 | 640
+1 | 100
+2,894 | 73,214
+
 
 
 **Ecuación potencial**
 
 - Expresión:
 ```
-y = 71,78x-1,49 
+	y = 233,9x-1,40 
 ```
 - Código:
 ```arduino
-	double monoxidoDeCarbono = 71.781*pow(mq7_resistencia/5463, -1.49);
+	double monoxidoDeCarbono = 233,9*pow(mq7_resistencia/5463, -1,40);
 ```
   
 
