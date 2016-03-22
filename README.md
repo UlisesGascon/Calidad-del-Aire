@@ -219,3 +219,9 @@ Ejemplo de los datos que esperamos recibir vía puerto serial
 ![temperatura_img](datasheets/temperatura_amazon.jpg)
 
 - [XCSOURCE® Módulo Sensor Digital Humedad DHT22 y Temperatura AM2302 Para Arduino TE248](https://www.amazon.es/gp/product/B011U8GA40/)
+
+### Agradecimientos
+
+- **[Trastejant - Sensores de gas](http://www.trastejant.es/tutoriales/electronica/sensoresGas.html)**
+- **[Naylamp Mechatronics - Tutorial sensores de gas MQ2, MQ3, MQ7 y MQ135](http://www.naylampmechatronics.com/blog/42_Tutorial-sensores-de-gas-MQ2-MQ3-MQ7-y-MQ13.html)**
+Ejemplo de los datos que esperamos recibir vía puerto serial
