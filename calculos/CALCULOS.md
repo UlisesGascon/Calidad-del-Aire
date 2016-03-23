@@ -215,7 +215,6 @@ Rs/Ro | ppm
 
 ### Óxidos de Nitrógeno
 
-
 ![oxidos](oxidos.png)
 
 **Puntos de la curva**
@@ -239,3 +238,25 @@ Rs/Ro | ppm
 ```
 
 ### Amoniaco
+
+![amoniaco](amoniaco.png)
+
+**Puntos de la curva**
+
+Rs/Ro | ppm
+------------ | -------------
+0,871 | 370
+0,967 | 100
+3,491 | 10
+
+
+**Ecuación potencial**
+
+- Expresión:
+```
+	y = 161,7x-2,26 
+```
+- Código:
+```arduino
+	double amoniaco = 161,7*pow(mq135_resistencia/5463, -2,26);
+```

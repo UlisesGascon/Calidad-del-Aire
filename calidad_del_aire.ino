@@ -96,7 +96,7 @@ void loop()
   float mq135_resistencia = 1000*((5-mq135_voltaje)/mq135_voltaje);
   double dioxidoDeCarbono = 245*pow(mq135_resistencia/5463, -2.26);
   double oxidosDeNitrogeno = 132.6*pow(mq135_resistencia/5463, -2,74);
-  double amoniaco = 0.4091*pow(mq135_resistencia/5463, -1.497);
+  double amoniaco = 161,7*pow(mq135_resistencia/5463, -2,26);
   String mq135_umbral = "false";
 
   if(digitalRead(5) == 0){
