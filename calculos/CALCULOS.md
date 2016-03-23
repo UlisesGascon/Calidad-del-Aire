@@ -188,6 +188,31 @@ Rs/Ro | ppm
 
 ### Dióxido de Carbono
 
+![dioxido](dioxido.png)
+
+**Puntos de la curva**
+
+Rs/Ro | ppm
+------------ | -------------
+0,911 | 370
+1,321 | 100
+4,214 | 10
+
+
+
+
+**Ecuación potencial**
+
+- Expresión:
+```
+	y = 245,0x-2,26
+```
+- Código:
+```arduino
+	double dioxidoDeCarbono = 245*pow(mq135_resistencia/5463, -2.26);
+```
+  
+
 ### Óxidos de Nitrógeno
 
 ### Amoniaco
