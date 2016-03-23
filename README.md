@@ -224,3 +224,13 @@ Ejemplo de los datos que esperamos recibir vía puerto serial
 
 - **[Trastejant - Sensores de gas](http://www.trastejant.es/tutoriales/electronica/sensoresGas.html)**
 - **[Naylamp Mechatronics - Tutorial sensores de gas MQ2, MQ3, MQ7 y MQ135](http://www.naylampmechatronics.com/blog/42_Tutorial-sensores-de-gas-MQ2-MQ3-MQ7-y-MQ13.html)**
+
+### Licencias
+
+- Documentación bajo una [licencia de Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional](http://creativecommons.org/licenses/by-sa/4.0/).
+- Hardware (pendiente - v1.0.0)
+- Software bajo una [licencia GPLv3](https://github.com/UlisesGascon/Calidad-del-Aire/blob/master/LICENSE)
+
+ *Nota: En este proyecto se usan librerías (carpeta [/librerias](librerias)) de terceros y ejemplos (carpeta [/snippets](snippets)), estos no necesariamente están sujetos a la misma licencia que el resto del proyecto.* 
+
+
