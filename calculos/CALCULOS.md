@@ -215,4 +215,27 @@ Rs/Ro | ppm
 
 ### Óxidos de Nitrógeno
 
+
+![oxidos](oxidos.png)
+
+**Puntos de la curva**
+
+Rs/Ro | ppm
+------------ | -------------
+0,823 | 370
+0,911 | 100
+2,607 | 10
+
+
+**Ecuación potencial**
+
+- Expresión:
+```
+	y = 132,6x-2,74 
+```
+- Código:
+```arduino
+	double oxidosDeNitrogeno = 132.6*pow(mq135_resistencia/5463, -2,74);
+```
+
 ### Amoniaco
