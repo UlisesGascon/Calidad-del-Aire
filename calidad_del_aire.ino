@@ -32,14 +32,14 @@ void loop()
   int mq2_adc = analogRead(A13);
   float mq2_voltaje = mq2_adc * (5.0 / 1023.0);
   float mq2_resistencia = 1000*((5-mq2_voltaje)/mq2_voltaje);
-  double glp = 8555*pow(mq2_resistencia/5463, -1,74);
+  double glp = 8555*pow(mq2_resistencia/5463, -1.74);
   bool mq2_umbral = digitalRead(13); 
 
   // MQ-3
   int mq3_adc = analogRead(A12);
   float mq3_voltaje = mq3_adc * (5.0 / 1023.0);
   float mq3_resistencia = 1000*((5-mq3_voltaje)/mq3_voltaje); 
-  double Alcohol = 1,108*pow(mq3_resistencia/5463, -1,41);
+  double alcohol = 1.108*pow(mq3_resistencia/5463, -1.41);
   String mq3_umbral = "false";
 
   if(digitalRead(12) == 0){
@@ -50,7 +50,7 @@ void loop()
   int mq4_adc = analogRead(A11);
   float mq4_voltaje = mq4_adc * (5.0 / 1023.0);
   float mq4_resistencia = 1000*((5-mq4_voltaje)/mq4_voltaje);
-  double metano = 6922*pow(mq4_resistencia/5463, -1,91);
+  double metano = 6922*pow(mq4_resistencia/5463, -1.91);
   String mq4_umbral = "false";
 
   if(digitalRead(11) == 0){
@@ -61,7 +61,7 @@ void loop()
   int mq6_adc = analogRead(A9);
   float mq6_voltaje = mq6_adc * (5.0 / 1023.0);
   float mq6_resistencia = 1000*((5-mq6_voltaje)/mq6_voltaje);
-  double propano = 2738*pow(mq6_resistencia/5463, -1,81);
+  double propano = 2738*pow(mq6_resistencia/5463, -1.81);
   String mq6_umbral = "false";
 
   if(digitalRead(9) == 0){
@@ -72,7 +72,7 @@ void loop()
   int mq7_adc = analogRead(A8);
   float mq7_voltaje = mq7_adc * (5.0 / 1023.0);
   float mq7_resistencia = 1000*((5-mq7_voltaje)/mq7_voltaje);
-  double monoxidoDeCarbono = 233,9*pow(mq7_resistencia/5463, -1,40);
+  double monoxidoDeCarbono = 233.9*pow(mq7_resistencia/5463, -1.40);
   String mq7_umbral = "false";
 
   if(digitalRead(8) == 0){
@@ -95,8 +95,8 @@ void loop()
   float mq135_voltaje = mq135_adc * (5.0 / 1023.0);
   float mq135_resistencia = 1000*((5-mq135_voltaje)/mq135_voltaje);
   double dioxidoDeCarbono = 245*pow(mq135_resistencia/5463, -2.26);
-  double oxidosDeNitrogeno = 132.6*pow(mq135_resistencia/5463, -2,74);
-  double amoniaco = 161,7*pow(mq135_resistencia/5463, -2,26);
+  double oxidosDeNitrogeno = 132.6*pow(mq135_resistencia/5463, -2.74);
+  double amoniaco = 161.7*pow(mq135_resistencia/5463, -2.26);
   String mq135_umbral = "false";
 
   if(digitalRead(5) == 0){
