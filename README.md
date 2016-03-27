@@ -1,6 +1,11 @@
 # Calidad-del-Aire
 Sistema para controlar la calidad del aire usando Arduino y los sensores MQ(2-9, y 135), AM2302 y DHT22. Los datos se exportan en formato .json vía comunicación serial
 
+### Ejemplos de uso
+
+- **[Calidad del Aire con Firebase](https://github.com/UlisesGascon/Calidad-del-Aire-con-Firebase)**
+Repositorio que muestra como se pueden exportar estos datos usando Node.js para posteriormente almacenarlos en Firebase. Múltiples usuarios pueden consultar los datos en tiempo real usando Websockets. [Demo](https://calidaddelaire.firebaseio.com/)
+
 ### Contenedor (caja)
 
 ![caja](caja/caja_corte_laser_trasera.jpg)
