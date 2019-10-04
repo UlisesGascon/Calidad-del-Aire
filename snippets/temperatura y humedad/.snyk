@@ -6,3 +6,6 @@ patch:
   SNYK-JS-LODASH-450202:
     - serialport > node-pre-gyp-github > @octokit/rest > lodash:
         patched: '2019-07-04T05:26:45.893Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - serialport > node-pre-gyp-github > @octokit/rest > https-proxy-agent:
+        patched: '2019-10-04T05:35:04.666Z'
